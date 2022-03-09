@@ -776,7 +776,9 @@ def game_loop():
                 car_obj.y = (display_height * 0.8)
                 total_rewards=0
 
-                ai_agent.replay(500)
+                if ai_agent != None:
+
+                    ai_agent.replay(500)
 
                 break
             
